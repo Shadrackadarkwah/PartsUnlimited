@@ -18,7 +18,7 @@ Write-Host "$solution"
 Write-Host "$webSiteDir"
 Write-Host "$testDir"
 
-# Restore and build projects
+# Restore and build project
 & dotnet restore $solution
 & dotnet build $webSite --configuration $BuildConfiguration --verbosity d
 & dotnet build $test --configuration $BuildConfiguration --verbosity d
