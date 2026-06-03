@@ -31,7 +31,7 @@ $publishDirectory = Join-Path $BuildStagingDirectory "Publish"
 $outputDirectory = Join-Path $publishDirectory "PartsUnlimited"
 & dotnet publish $webSite --framework netcoreapp2.2 --output $outputDirectory --configuration $BuildConfiguration
 
-# Package to MSDeploy format
+# Package to MSDeploy fomart
 $manifestFile = Join-Path $publishDirectory "manifest.xml"
 $sourceManifest = @'
 <?xml version="1.0" encoding="utf-8"?>
